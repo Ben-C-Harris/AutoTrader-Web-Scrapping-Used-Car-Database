@@ -1,4 +1,4 @@
-# AutoTrader-Web-Scrapping-Used-Car-Database
+# AutoTrader-Web-Scraping-Used-Car-Database
 Web Scraping used to create used car database from https://www.autotrader.co.uk/
 
 
