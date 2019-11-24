@@ -33,6 +33,15 @@ A selection of ten random rows of the dataset is as shown below:
 # How to run
 This process is run in three parts.
 
+## Part  One ##
+
+
+## Part  Two ##
+
+
+## Part  Three ##
+
+
 NB - if in anaconda ensure PATH is correct
    running server in commandline
 
