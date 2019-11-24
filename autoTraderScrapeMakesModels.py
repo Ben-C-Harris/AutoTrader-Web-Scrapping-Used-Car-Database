@@ -11,12 +11,11 @@ of used cars that AutoTrader currently has listed on its website.
 To get a closer look at what is happenening within the request and JSON sections
 of this script, I would advise looking into your network monitor and JSON browser.
 
-This can be done through using: CNTRL+SHIFT+E for JSON browser while more info
+This can be done through using: CNTRL+SHIFT+E or CTRL-U for JSON/HTML browser while more info
 can be found at places such as (Your browser may be different):
     https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor
-    
-or Ctrl-U
 '''
+
 USING_PROXY = False
 PROXY_SETTINGS = {"https": "https://127.0.0.1:24000"}
 OUTPUT_PKL_FILE = "dataMakeAndModelPickle.pkl"
