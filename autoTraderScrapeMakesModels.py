@@ -17,7 +17,7 @@ can be found at places such as (Your browser may be different):
 '''
 
 USING_PROXY = False
-PROXY_SETTINGS = {"https": "https://127.0.0.1:24000"}
+PROXY_SETTINGS = {"https": "https://XXX.X.X.X:XXXXX"}
 OUTPUT_PKL_FILE = "dataMakeAndModelPickle.pkl"
 
 class AutoTraderMakesAndModelsWebScraper():
