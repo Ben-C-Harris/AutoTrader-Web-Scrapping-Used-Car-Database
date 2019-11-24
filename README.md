@@ -39,20 +39,48 @@ Part one is to find all currently listed makes and models on https://www.autotra
 <p align="center"><img src="screenShots/autoTraderMakeScreenShot.png" /></p>
 <p align="center"><img src="screenShots/autoTraderModelScreenShot.png" /></p>
 
-
-
+This is completed through running the below script and user settings:
 
       autoTraderScrapeMakesModels.py
+      
+            USING_PROXY - Do you want to utilize proxy settings
+            PROXY_SETTINGS - Which settings to use
+            OUTPUT_PKL_FILE - Output file name
 
 
 ### Part  Two ###
+Upon finding all the makes and models of cars on https://www.autotrader.co.uk/, we can now search each make and model and retrieve the individual listing for as many cars as requested. This involves running the below script and user settings:
 
       autoTraderUsedCarScrape.py
+      
+            USING_PROXY - Do you want to utilize proxy settings
+            PROXY_SETTINGS - Which settings to use
+            PKL_READ_FILE - Read in the Makes and Models pkl from Part One
+            PKL_OUT_FILE - Output file name
+            MAX_PAGE_NUM - How many search pages would you like to run through. Each page holds 12 car listings.
 
 ### Part  Three ###
+Now that we have our dataset of all the car listings requested we can visualise it using bokeh. As the dataset is very large we will use a bokeh server to create dynamic plots for easier interrogation. For those of you running within an IDE upto this point, afraid this is a command line (CMD) exersise, but its really easy!
+
+First open the .py file and ensure the input datafile is set correctly to your dataset name.
 
       bokehServerAutoTrader.py
+      
+            DATA_FILE = Input data from Part Two 
 
+Then open a command line within the directory containing `bokehServerAutoTrader.py` and run:
+
+      bokeh serve --show bokehServerAutoTrader.py
+
+This will run your bokeh server and open a new tab in your browser with you new interactive plot as below:
+
+<p align="center"><img src="dynamicBokehAutoTraderDemo.gif" /></p>
+
+
+
+
+
+### Additional note on Proxy Settings ###
 
 NB - if in anaconda ensure PATH is correct
    running server in commandline
