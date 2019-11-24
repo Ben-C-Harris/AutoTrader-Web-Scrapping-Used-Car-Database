@@ -39,7 +39,7 @@ Part one is to find all currently listed makes and models on https://www.autotra
 <p align="center"><img src="screenShots/autoTraderMakeScreenShot.png" /></p>
 <p align="center"><img src="screenShots/autoTraderModelScreenShot.png" /></p>
 
-This is completed through running the below script and user settings:
+This is completed through running the below script and user settings. At this point ensure your environment has all the required dependencies.
 
       autoTraderScrapeMakesModels.py
       
@@ -49,7 +49,11 @@ This is completed through running the below script and user settings:
 
 
 ### Part  Two ###
-Upon finding all the makes and models of cars on https://www.autotrader.co.uk/, we can now search each make and model and retrieve the individual listing for as many cars as requested. This involves running the below script and user settings:
+Upon finding all the makes and models of cars on https://www.autotrader.co.uk/ using Part One, we can now search each make and model and retrieve the individual listing for as many cars as requested. This page looks like the below:
+
+<p align="center"><img src="screenShots/autoTraderListingScreenShot.png" /></p>
+
+To do this, we run the below script and user settings:
 
       autoTraderUsedCarScrape.py
       
@@ -76,22 +80,12 @@ This will run your bokeh server and open a new tab in your browser with you new 
 
 <p align="center"><img src="dynamicBokehAutoTraderDemo.gif" /></p>
 
+Note on running Bokeh Server. I initially had issues running the server and this ended up being how I installed Anaconda and the PATH variables. So it turns out, this is pretty common. As such, ensure you have your PATH variables correctly set up as a first port of call should you encounter an issue running the above bokeh server application.
 
 
+### Successful and Reliable Web Scraping through Proxy Settings  ###
 
-
-### Additional note on Proxy Settings ###
-
-NB - if in anaconda ensure PATH is correct
-   running server in commandline
-
-
-
-model is simple to run and is commented to help share what is actually going on. Ensure you have the above packages installed in your environment and download/clone:
-
-      
-      carPricePredictRegression.py
-      fullDataSet.pkl (Must be within dataSet dir as in GitHub folder layout)
+WIP...
 
 
 
