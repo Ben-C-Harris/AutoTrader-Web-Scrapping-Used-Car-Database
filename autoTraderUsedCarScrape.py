@@ -3,6 +3,20 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
 
+'''
+Web scraping for website: https://www.autotrader.co.uk/
+
+This Class is for web scraping and writing to PKL file all the individual makes and models
+of used cars that AutoTrader currently has listed on its website.
+
+To get a closer look at what is happenening within the request and JSON sections
+of this script, I would advise looking into your network monitor and JSON/HTML browser.
+
+This can be done through using: CNTRL+SHIFT+E or CTRL-U for JSON/HTML browser while more info
+can be found at places such as (Your browser may be different):
+    https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor
+'''
+
 USING_PROXY = False
 PROXY_SETTINGS = {"https": "https://XXX.X.X.X:XXXXX"}
 PKL_READ_FILE = "autoTraderMakeAndModel.pkl"

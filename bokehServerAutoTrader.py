@@ -7,7 +7,8 @@ from bokeh.models import  HoverTool
 from bokeh.models import ColumnDataSource
 
 """
-TO RUN:
+To run within CMD:
+    
 bokeh serve --show bokehServerAutoTrader.py
 
 """
