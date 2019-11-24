@@ -39,7 +39,7 @@ This process is run in three parts.
 #### Part  Two ####
 
 
-## Part  Three ##
+### Part  Three ###
 
 
 NB - if in anaconda ensure PATH is correct
