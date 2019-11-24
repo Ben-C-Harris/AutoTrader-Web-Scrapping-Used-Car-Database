@@ -33,17 +33,31 @@ A selection of ten random rows of the dataset is as shown below:
 # How to run
 This process is run in three parts.
 
-**Part  One**
+### Part  One ###
+Part one is to find all currently listed makes and models on https://www.autotrader.co.uk/ as shown in the below photos:
+
+<p align="center"><img src="screenShots/autoTraderMakeScreenShot.png" /></p>
+<p align="center"><img src="screenShots/autoTraderModelScreenShot.png" /></p>
 
 
-#### Part  Two ####
 
+
+      autoTraderScrapeMakesModels.py
+
+
+### Part  Two ###
+
+      autoTraderUsedCarScrape.py
 
 ### Part  Three ###
+
+      bokehServerAutoTrader.py
 
 
 NB - if in anaconda ensure PATH is correct
    running server in commandline
+
+
 
 model is simple to run and is commented to help share what is actually going on. Ensure you have the above packages installed in your environment and download/clone:
 
