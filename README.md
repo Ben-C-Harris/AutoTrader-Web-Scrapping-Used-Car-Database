@@ -31,7 +31,7 @@ A selection of ten random rows of the dataset is as shown below:
     bokeh
 
 # How to run
-This process is run in three parts.
+This process is run in three parts. The input and output datasets at each part are already created and shown within this repo should you wish to skip stages or go straight to the Bokeh Server application.
 
 ### Part  One ###
 Part one is to find all currently listed makes and models on https://www.autotrader.co.uk/ as shown in the below photos:
@@ -84,8 +84,13 @@ Note on running Bokeh Server. I initially had issues running the server and this
 
 
 ### Successful and Reliable Web Scraping through Proxy Settings  ###
+Web scraping can be very difficult to do reliably and consistently. You can see within the web scraping files that there is an option for proxy settings.
 
-WIP...
+You can run the web scrapers without any proxy settings however this will ultimately end up with you being denied access to the website as it knows that you are a bot and not a real human. You can impliment random pauses within the application if you wanted, but with a database retrieval of this magnitude this is also insufficient for entire extraction of data upto 500,000 individual cars.
+
+As a result of this, the use of proxy settings is the best way to conduct large full scale web scraping with high reliability and success rate. I ultimately was able to deliver a 99.4% success rate for several hundred thousand cars well within an hour, through the use of clever proxy settings. The specifics of which I will not go into here as I wish that IP to remain my own.
+
+But experiment as best you can I am sure you too will find some excellent results!
 
 
 
